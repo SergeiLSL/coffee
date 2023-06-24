@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePageCoffee"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<div class="spollers">
-					<div class="spollers__title">start 22/06/2023 time 21:20</div>
-               <div class="spollers__title">Home Page Coffee</div>
-				</div>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"HomePageCoffee"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <div class="spollers">
+            <div class="spollers__title">start 22/06/2023 time 21:20</div>
+            <div class="spollers__title">Home Page Coffee</div>
+         </div>
+
+         <section class="page__best-coffee best-coffee">
+            <div class="best-coffee__container">
+               <div class="best-coffee__inner">
+                  <div class="best-coffee__row">
+                     <div class="best-coffee__content">
+                        <h2 class="best-coffee__title title">
+                           <p>Discover the best coffee</p>
+                        </h2>
+                        <div class="best-coffee__text block">
+                           <div class="block__content text">
+                              <p>
+                                 Bean Scene is a coffee shop that provides you with quality coffee that helps boost your
+                                 productivity and helps build your mood. Having a cup of coffee is good, but having a
+                                 cup of real coffee is greater. There is no doubt that you will enjoy this coffee more
+                                 than others you have ever tasted. </p>
+                           </div>
+                           <button data-showmore-button type="button" class="block__more best-coffee__btn btn">
+                              <span>Learn More</span><span>hide</span>
+                           </button>
+                        </div>
+                     </div>
+
+                     <div class="best-coffee__image">
+                        <a href="#"><img src="@img/best-coffee/coffee-beans.jpg" alt="Image"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_js.htm',{})
+</body>
+
 </html>
