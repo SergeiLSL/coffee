@@ -3,6 +3,12 @@
    // .page__best-coffee
    &__best-coffee {
    }
+   // .page__coffee-style
+   &__coffee-style {
+   }
+   // .page__we-differents
+   &__we-differents {
+   }
 }
 //===============================================================================================
 //==== start  =======================================================
@@ -11,29 +17,36 @@
 //====================================================================================================
 //==== start best-coffee =======================================================
 .best-coffee {
-   background: url('@img/best-coffee/coffee_blast.png') left 150% no-repeat;
+   @include adaptiveValue("padding-top", 82, 40);
+   @include adaptiveValue("padding-bottom", 82, 40);
+   position: relative;
+
+   // background: url("@img/best-coffee/coffee_blast.png") left 100% no-repeat;
+   background-color: #fee8d0;
+
    // transform: matrix(1, 0, 0, -1, 0, 0);
    // .best-coffee__container
    &__container {
    }
    // .best-coffee__inner
    &__inner {
+      // background-color: #f5fed0;
    }
    // .best-coffee__row
    &__row {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      @media (max-width:$tablet){
+      @media (max-width: $tablet) {
          flex-direction: column;
       }
    }
    // .best-coffee__content
    &__content {
       flex: 0 1 50%;
-      // @media (max-width:$tablet){
-      //    flex: 0 1 100%;
-      // }
+      @media (max-width: $tablet) {
+         margin-bottom: rem(30);
+      }
    }
    // .best-coffee__title
    &__title {
@@ -43,7 +56,7 @@
    }
    // .best-coffee__text
    &__text {
-      font-size: rem(20);
+      @include adaptiveValue("font-size", 20, 16);
       line-height: 170%; /* 34/20 */
       color: var(--text-primary);
    }
@@ -55,27 +68,26 @@
       flex: 0 1 50%;
       padding-left: rem(95);
       position: relative;
-      z-index: 2;
       transition: all 0.5s;
-      width: rem(500);
-      height: rem(484);
       img {
-         width: 100%;
+         max-width: 100%;
          object-fit: cover;
       }
       @media (max-width: $tablet) {
          padding: 0;
       }
       &:hover {
-         transform: scale(1.01)
-      }      
+         transform: scale(1.01);
+      }
    }
 }
 
 .block {
    // .block__content
    &__content {
-      &:not(:last-child) {margin-bottom: rem(29);}
+      &:not(:last-child) {
+         margin-bottom: rem(29);
+      }
    }
    // .block__more
    &__more {
@@ -83,13 +95,204 @@
 }
 //==== finish best-coffee =======================================================
 //====================================================================================================
-//==== start  =======================================================
+//==== start coffee-style =======================================================
+.coffee-style {
+   padding-bottom: rem(82);
+   // .coffee-style__container
+   &__container {
+   }
+   // .coffee-style__inner
+   &__inner {
+      text-align: center;
+   }
+   // .coffee-style__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(16);
+      }
+   }
+   // .coffee-style__text
+   &__text {
+      @include adaptiveValue("font-size", 20, 18);
+      line-height: 170%; /* 34/20 */
+      color: var(--text-primary);
+      &:not(:last-child) {
+         margin-bottom: rem(32);
+      }
+   }
+   // .coffee-style__order
+   &__order {
+   }
+}
 
-//==== finish  =======================================================
+.order-coffee {
+   // .order-coffee__row
+   &__row {
+      display: grid;
+      column-gap: rem(20);
+      row-gap: rem(40);
+      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+   }
+   // .order-coffee__column
+   &__column {
+   }
+   // .order-coffee__item
+   &__item {
+   }
+   // .order-coffee__card
+   &__card {
+   }
+}
+
+.card-order {
+   // .card-order__image-ibg
+   &__image-ibg {
+      padding-bottom: 79.28%;
+      transition: all 0.5s;
+      &:hover {
+         transform: scale(1.02);
+      }
+   }
+   // .card-order__content
+   &__content {
+      padding-top: rem(14);
+      padding-bottom: rem(42);
+      background: #fff9f1;
+      border: rem(1) solid rgba(249, 192, 106, 0.42);
+   }
+   // .card-order__name
+   &__name {
+      font-weight: 700;
+      font-size: rem(22);
+      line-height: 131.82%; /* 29/22 */
+      color: var(--text-title);
+      &:not(:last-child) {
+         margin-bottom: rem(6);
+      }
+   }
+   // .card-order__compound
+   &__compound {
+      font-size: rem(16);
+      line-height: 131.25%; /* 21/16 */
+      color: var(--text-secondary);
+      &:not(:last-child) {
+         margin-bottom: rem(6);
+      }
+   }
+   // .card-order__price
+   &__price {
+      font-weight: 700;
+      font-size: rem(18);
+      line-height: 133.33%; /* 24/18 */
+      color: var(--text-title);
+   }
+   // .card-order__buttons
+   &__buttons {
+      margin-top: rem(-24);
+   }
+   // .card-order__button
+   &__button {
+   }
+}
+//==== finish coffee-style =======================================================
 //====================================================================================================
-//==== start  =======================================================
+//==== start we-differents =======================================================
+.we-differents {
+   @include adaptiveValue("padding-top", 82, 40);
+   @include adaptiveValue("padding-bottom", 82, 40);
+   // .we-differents__container
+   &__container {
+   }
+   // .we-differents__inner
+   &__inner {
+      text-align: center;
+   }
+   // .we-differents__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: rem(16);
+      }
+   }
+   // .we-differents__text
+   &__text {
+      @include adaptiveValue("font-size", 20, 18);
+      line-height: 170%; /* 34/20 */
+      color: var(--text-primary);
+      &:not(:last-child) {
+         margin-bottom: rem(32);
+      }
+   }
+   // .we-differents__row
+   &__row {
+      display: grid;
+      column-gap: rem(20);
+      row-gap: rem(20);
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      &:not(:last-child) {
+         margin-bottom: rem(32);
+      }
+   }
+   // .we-differents__column
+   &__column {
+   }
+   // .we-differents__card
+   &__card {
+   }
+   // .we-differents__bottom-box
+   &__bottom-box {
+      &:not(:last-child) {
+         margin-bottom: rem(24);
+      }
+   }
+   // .we-differents__text-box
+   &__text-box {
+      font-size: rem(20);
+      line-height: 135%; /* 27/20 */
+      color: var(--text-primary);
+   }
+   // .we-differents__title-box
+   &__title-box {
+      font-weight: 700;
+      font-size: rem(30);
+      line-height: 133.33%; /* 40/30 */
+      color: var(--text-title);
+   }
+   // .we-differents__buttons
+   &__buttons {
+   }
+   // .we-differents__button
+   &__button {
+      padding: rem(14) rem(41) rem(13) rem(41);
+   }
+}
 
-//==== finish  =======================================================
+.card-differents {
+   display: block;
+   padding: rem(36) rem(34) rem(36) rem(34);
+   background: #fff9f1;
+   border: 1px solid rgba(249, 192, 106, 0.42);
+   // .card-differents__image
+   &__image {
+      &:not(:last-child) {
+         margin-bottom: rem(27);
+      }
+   }
+   // .card-differents__title
+   &__title {
+      font-weight: 700;
+      font-size: rem(28);
+      line-height: 132.14%; /* 37/28 */
+      color: var(--text-title);
+   }
+   // .card-differents__text
+   &__text {
+      font-size: rem(20);
+      line-height: 135%; /* 27/20 */
+      color: var(--text-primary);
+   }
+}
+
+//==== finish we-differents =======================================================
 //====================================================================================================
 //==== start =======================================================
 

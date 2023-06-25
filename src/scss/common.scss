@@ -2,11 +2,13 @@
 .title {
    font-weight: 700;
    font-size: rem(54);
-   line-height: 133.333333%; /* 72/54 */
+   @include adaptiveValue("font-size", 54, 34);
+   line-height: 133.33%; /* 72/54 */
    color: var(--text-title);
 }
 
 .btn {
+   display: inline-block;
    font-weight: 700;
    font-size: rem(16);
    line-height: 131.25%; /* 21/16 */
@@ -15,8 +17,9 @@
    padding: rem(14) rem(24) rem(13) rem(23);
    box-shadow: 0 rem(6) rem(12) rgba(249, 192, 106, 0.22);
    border-radius: rem(24);
-   transition: opacity 0.3s;
+   transition: background-color 0.5s;
    &:hover {
-      opacity: 0.85;
+      // opacity: 0.85;
+      background-color: #f7b34d;
    }
 }
