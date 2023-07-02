@@ -5,208 +5,250 @@
 })
 
 <body>
-   <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-         <div class="spollers">
-            <div class="spollers__title">start 22/06/2023 time 21:20</div>
-            <div class="spollers__title">Home Page Coffee</div>
-         </div>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="spollers none">
+                <div class="spollers__title">start 22/06/2023 time 21:20</div>
+                <div class="spollers__title">Home Page Coffee</div>
+            </div>
 
-         <section class="page__best-coffee best-coffee">
-            <div class="best-coffee__container">
-               <div class="best-coffee__inner">
-                  <div class="best-coffee__row">
-                     <div class="best-coffee__content">
-                        <h2 class="best-coffee__title title">
-                           <p>Discover the best coffee</p>
+            
+
+            <section class="page__best-coffee best-coffee">
+                <div class="best-coffee__container">
+                    <div class="best-coffee__inner">
+                        <div class="best-coffee__row">
+                            <div class="best-coffee__content">
+                                <h2 class="best-coffee__title title">
+                                    <p>Discover the best coffee</p>
+                                </h2>
+                                <div class="best-coffee__text block">
+                                    <div class="block__content text">
+                                        <p>
+                                            Bean Scene is a coffee shop that provides you with quality coffee that helps
+                                            boost your
+                                            productivity and helps build your mood. Having a cup of coffee is good, but
+                                            having a
+                                            cup of real coffee is greater. There is no doubt that you will enjoy this
+                                            coffee more
+                                            than others you have ever tasted. </p>
+                                    </div>
+                                    <button type="button" class="block__more best-coffee__btn btn">
+                                        <span>Learn More</span><span>hide</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="best-coffee__image">
+                                <a href="#"><img src="@img/best-coffee/coffee-beans.jpg" alt="Image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__coffee-style coffee-style">
+                <div class="coffee-style__container">
+                    <div class="coffee-style__inner">
+                        <h2 class="coffee-style__title title">
+                            <p>Enjoy a new blend of coffee style</p>
                         </h2>
-                        <div class="best-coffee__text block">
-                           <div class="block__content text">
-                              <p>
-                                 Bean Scene is a coffee shop that provides you with quality coffee that helps boost your
-                                 productivity and helps build your mood. Having a cup of coffee is good, but having a
-                                 cup of real coffee is greater. There is no doubt that you will enjoy this coffee more
-                                 than others you have ever tasted. </p>
-                           </div>
-                           <button type="button" class="block__more best-coffee__btn btn">
-                              <span>Learn More</span><span>hide</span>
-                           </button>
+                        <div class="coffee-style__text">
+                            Explore all flavours of coffee with us. There is always a new cup worth experiencing
                         </div>
-                     </div>
+                        <div class="coffee-style__order order-coffee">
+                            <div class="order-coffee__row">
+                                <div class="order-coffee__column">
+                                    <div class="order-coffee__item">
+                                        <div class="order-coffee__card card-order">
+                                            <div class="card-order__image-ibg">
+                                                <img src="@img/coffee-style/01.jpg" alt="Image">
+                                            </div>
+                                            <div class="card-order__content">
+                                                <div class="card-order__name">Cappuccino</div>
+                                                <div class="card-order__compound">Coffee 50% | Milk 50%</div>
+                                                <div class="card-order__price">$8.50</div>
+                                            </div>
+                                            <div class="card-order__buttons">
+                                                <a href="#" class="card-order__button btn">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-coffee__column">
+                                    <div class="order-coffee__item">
+                                        <div class="order-coffee__card card-order">
+                                            <div class="card-order__image-ibg">
+                                                <img src="@img/coffee-style/02.jpg" alt="Image">
+                                            </div>
+                                            <div class="card-order__content">
+                                                <div class="card-order__name">Chai Latte</div>
+                                                <div class="card-order__compound">Coffee 50% | Milk 50%</div>
+                                                <div class="card-order__price">$8.50</div>
+                                            </div>
+                                            <div class="card-order__buttons">
+                                                <a href="#" class="card-order__button btn">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-coffee__column">
+                                    <div class="order-coffee__item">
+                                        <div class="order-coffee__card card-order">
+                                            <div class="card-order__image-ibg">
+                                                <img src="@img/coffee-style/03.jpg" alt="Image">
+                                            </div>
+                                            <div class="card-order__content">
+                                                <div class="card-order__name">Macchiato</div>
+                                                <div class="card-order__compound">Coffee 50% | Milk 50%</div>
+                                                <div class="card-order__price">$8.50</div>
+                                            </div>
+                                            <div class="card-order__buttons">
+                                                <a href="#" class="card-order__button btn">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-coffee__column">
+                                    <div class="order-coffee__item">
+                                        <div class="order-coffee__card card-order">
+                                            <div class="card-order__image-ibg">
+                                                <img src="@img/coffee-style/04.jpg" alt="Image">
+                                            </div>
+                                            <div class="card-order__content">
+                                                <div class="card-order__name">Expresso</div>
+                                                <div class="card-order__compound">Coffee 50% | Milk 50%</div>
+                                                <div class="card-order__price">$8.50</div>
+                                            </div>
+                                            <div class="card-order__buttons">
+                                                <a href="#" class="card-order__button btn">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                     <div class="best-coffee__image">
-                        <a href="#"><img src="@img/best-coffee/coffee-beans.jpg" alt="Image"></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+            <section class="page__we-differents we-differents">
+                <div class="we-differents__container">
+                    <div class="we-differents__inner">
+                        <h2 class="we-differents__title title">
+                            <p>Enjoy a new blend of coffee style</p>
+                        </h2>
+                        <div class="we-differents__text">
+                            Explore all flavours of coffee with us. There is always a new cup worth experiencing
+                        </div>
+                        <div class="we-differents__row">
+                            <div class="we-differents__column">
+                                <div class="we-differents__card card-differents">
+                                    <div class="card-differents__image">
+                                        <img src="@img/we-differents/01.svg" width="88" height="88" alt="Icon">
+                                    </div>
+                                    <h3 class="card-differents__title">
+                                        Supreme Beans
+                                    </h3>
+                                    <p class="card-differents__text">
+                                        Beans that provides great taste
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="we-differents__column">
+                                <div class="we-differents__card card-differents">
+                                    <div class="card-differents__image">
+                                        <img src="@img/we-differents/02.svg" width="88" height="88" alt="Icon">
+                                    </div>
+                                    <h3 class="card-differents__title">
+                                        High Quality
+                                    </h3>
+                                    <p class="card-differents__text">
+                                        We provide the highest quality
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="we-differents__column">
+                                <div class="we-differents__card card-differents">
+                                    <div class="card-differents__image">
+                                        <img src="@img/we-differents/03.svg" width="88" height="88" alt="Icon">
+                                    </div>
+                                    <h3 class="card-differents__title">
+                                        Extraordinary
+                                    </h3>
+                                    <p class="card-differents__text">
+                                        Coffee like you have never tasted
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="we-differents__column">
+                                <div class="we-differents__card card-differents">
+                                    <div class="card-differents__image">
+                                        <img src="@img/we-differents/04.svg" width="88" height="88" alt="Icon">
+                                    </div>
+                                    <h3 class="card-differents__title">
+                                        Affordable Price
+                                    </h3>
+                                    <p class="card-differents__text">
+                                        Our Coffee prices are easy to afford
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-         <section class="page__coffee-style coffee-style">
-            <div class="coffee-style__container">
-               <div class="coffee-style__inner">
-                  <h2 class="coffee-style__title title">
-                     <p>Enjoy a new blend of coffee style</p>
-                  </h2>
-                  <div class="coffee-style__text">
-                     Explore all flavours of coffee with us. There is always a new cup worth experiencing
-                  </div>
-                  <div class="coffee-style__order order-coffee">
-                     <div class="order-coffee__row">
-                        <div class="order-coffee__column">
-                           <div class="order-coffee__item">
-                              <div class="order-coffee__card card-order">
-                                 <div class="card-order__image-ibg">
-                                    <img src="@img/coffee-style/01.jpg" alt="Image">
-                                 </div>
-                                 <div class="card-order__content">
-                                    <div class="card-order__name">Cappuccino</div>
-                                    <div class="card-order__compound">Coffee 50% | Milk 50%</div>
-                                    <div class="card-order__price">$8.50</div>
-                                 </div>
-                                 <div class="card-order__buttons">
-                                    <a href="#" class="card-order__button btn">Order Now</a>
-                                 </div>
-                              </div>
-                           </div>
+                        <div class="we-differents__bottom-box">
+                            <p class="we-differents__text-box">Great ideas start with great coffee, Lets help you
+                                achieve that
+                            </p>
+                            <p class="we-differents__title-box"> Get started today.</p>
                         </div>
-                        <div class="order-coffee__column">
-                           <div class="order-coffee__item">
-                              <div class="order-coffee__card card-order">
-                                 <div class="card-order__image-ibg">
-                                    <img src="@img/coffee-style/02.jpg" alt="Image">
-                                 </div>
-                                 <div class="card-order__content">
-                                    <div class="card-order__name">Chai Latte</div>
-                                    <div class="card-order__compound">Coffee 50% | Milk 50%</div>
-                                    <div class="card-order__price">$8.50</div>
-                                 </div>
-                                 <div class="card-order__buttons">
-                                    <a href="#" class="card-order__button btn">Order Now</a>
-                                 </div>
-                              </div>
-                           </div>
+                        <div class="we-differents__buttons">
+                            <a href="#" class="we-differents__button btn">Join Us</a>
                         </div>
-                        <div class="order-coffee__column">
-                           <div class="order-coffee__item">
-                              <div class="order-coffee__card card-order">
-                                 <div class="card-order__image-ibg">
-                                    <img src="@img/coffee-style/03.jpg" alt="Image">
-                                 </div>
-                                 <div class="card-order__content">
-                                    <div class="card-order__name">Macchiato</div>
-                                    <div class="card-order__compound">Coffee 50% | Milk 50%</div>
-                                    <div class="card-order__price">$8.50</div>
-                                 </div>
-                                 <div class="card-order__buttons">
-                                    <a href="#" class="card-order__button btn">Order Now</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="order-coffee__column">
-                           <div class="order-coffee__item">
-                              <div class="order-coffee__card card-order">
-                                 <div class="card-order__image-ibg">
-                                    <img src="@img/coffee-style/04.jpg" alt="Image">
-                                 </div>
-                                 <div class="card-order__content">
-                                    <div class="card-order__name">Expresso</div>
-                                    <div class="card-order__compound">Coffee 50% | Milk 50%</div>
-                                    <div class="card-order__price">$8.50</div>
-                                 </div>
-                                 <div class="card-order__buttons">
-                                    <a href="#" class="card-order__button btn">Order Now</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div> 
-               </div>
-            </div>
-         </section>
+                    </div>
+                </div>
+            </section>
 
-         <section class="page__we-differents we-differents">
-            <div class="we-differents__container">
-               <div class="we-differents__inner">
-                  <h2 class="we-differents__title title">
-                     <p>Enjoy a new blend of coffee style</p>
-                  </h2>
-                  <div class="we-differents__text">
-                     Explore all flavours of coffee with us. There is always a new cup worth experiencing
-                  </div>
-                  <div class="we-differents__row">
-                     <div class="we-differents__column">
-                        <div class="we-differents__card card-differents">
-                           <div class="card-differents__image">
-                              <img src="@img/we-differents/01.svg" width="88" height="88" alt="Icon">
-                           </div>
-                           <h3 class="card-differents__title">
-                              Supreme Beans
-                           </h3>
-                           <p class="card-differents__text">
-                              Beans that provides great taste
-                           </p>
-                        </div>
-                     </div>
-                     <div class="we-differents__column">
-                        <div class="we-differents__card card-differents">
-                           <div class="card-differents__image">
-                              <img src="@img/we-differents/02.svg" width="88" height="88" alt="Icon">
-                           </div>
-                           <h3 class="card-differents__title">
-                              High Quality
-                           </h3>
-                           <p class="card-differents__text">
-                              We provide the highest quality
-                           </p>
-                        </div>
-                     </div>
-                     <div class="we-differents__column">
-                        <div class="we-differents__card card-differents">
-                           <div class="card-differents__image">
-                              <img src="@img/we-differents/03.svg" width="88" height="88" alt="Icon">
-                           </div>
-                           <h3 class="card-differents__title">
-                              Extraordinary 
-                           </h3>
-                           <p class="card-differents__text">
-                              Coffee like you have never tasted
-                           </p>
-                        </div>
-                     </div>
-                     <div class="we-differents__column">
-                        <div class="we-differents__card card-differents">
-                           <div class="card-differents__image">
-                              <img src="@img/we-differents/04.svg" width="88" height="88" alt="Icon">
-                           </div>
-                           <h3 class="card-differents__title">
-                              Affordable Price
-                           </h3>
-                           <p class="card-differents__text">
-                              Our Coffee prices are easy to afford
-                           </p>
-                        </div>
-                     </div>
-                  </div>
+            <section class="page__morning morning">
+                <div class="morning__image">
+                    <img src="@img/morning/image-bg.jpg" alt="Image">
+                </div>
+            </section>
 
-                  <div class="we-differents__bottom-box">
-                     <p class="we-differents__text-box">Great ideas start with great coffee, Lets help you achieve that</p>
-                     <p class="we-differents__title-box"> Get started today.</p>
-                  </div>
-                  <div class="we-differents__buttons">
-                     <a href="#" class="we-differents__button btn">Join Us</a>
-                  </div>
-               </div>
-            </div>
-         </section>
+            <section class="page__perfection perfection">
+                <div class="perfection__container">
+                    <div class="perfection__inner">
+                        <h2 class="perfection__title title">
+                            <p>Our coffee perfection feedback</p>
+                        </h2>
+                        <div class="perfection__text">
+                            Our customers has amazing things to say about us
+                        </div>
 
-      </main>
-      @@include('html/_footer.htm',{})
-   </div>
-   @@include('html/_js.htm',{})
+                        <div class="perfection__slider-content">
+                            <div class="slider-content swiper">
+                                <div class="slider-content__wrapper swiper-wrapper">
+                                    <div class="slider-content__slide swiper-slide">
+                                        <!--! НЕ ЗАКОНЧИЛ !!! -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__news news">
+                <div class="news__image">
+                    <img src="@img/news/image-bg.jpg" alt="Image">
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
 </body>
 
 </html>

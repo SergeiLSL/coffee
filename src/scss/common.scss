@@ -1,25 +1,31 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.none {
+    display: none !important;
+}
+
+
 .title {
-   font-weight: 700;
-   font-size: rem(54);
-   @include adaptiveValue("font-size", 54, 34);
-   line-height: 133.33%; /* 72/54 */
-   color: var(--text-title);
+    font-weight: 700;
+    font-size: rem(54);
+    @include adaptiveValue("font-size", 54, 34);
+    line-height: 133.33%; /* 72/54 */
+    color: var(--text-title);
 }
 
 .btn {
-   display: inline-block;
-   font-weight: 700;
-   font-size: rem(16);
-   line-height: 131.25%; /* 21/16 */
-   color: var(--bg-buttons-text);
-   background-color: var(--bg-buttons);
-   padding: rem(14) rem(24) rem(13) rem(23);
-   box-shadow: 0 rem(6) rem(12) rgba(249, 192, 106, 0.22);
-   border-radius: rem(24);
-   transition: background-color 0.5s;
-   &:hover {
-      // opacity: 0.85;
-      background-color: #f7b34d;
-   }
+    display: inline-block;
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: 131.25%; /* 21/16 */
+    color: var(--bg-buttons-text);
+    background-color: var(--bg-buttons);
+    padding: rem(14) rem(24) rem(13) rem(23);
+    box-shadow: 0 rem(6) rem(12) rgba(249, 192, 106, 0.22);
+    border-radius: rem(24);
+    transition: all 0.5s ease-in;
+    &:hover {
+        // opacity: 0.85;
+        background-color: #fbb142;
+        color: var(--text-title-secondary);
+    }
 }
